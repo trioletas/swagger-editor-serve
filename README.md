@@ -1,1 +1,2 @@
-# swagger-editor-serve
+# serve
+Serve Swagger Editor
