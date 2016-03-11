@@ -15,7 +15,6 @@
     "url": "https://github.com/trioletas/swagger-editor-serve.git"
   },
   "scripts": {
-    "start": "node lib/index.js",
     "lint": "node node_modules/eslint/bin/eslint.js lib/**",
     "prepublish": "npm run lint",
     "preversion": "npm run lint"
@@ -23,7 +22,7 @@
   "dependencies": {
     "bluebird": "3.3.4",
     "connect": "3.4.1",
-    "portfinder": "1.0.2",
+    "get-port": "2.1.0",
     "serve-static": "1.10.2"
   },
   "peerDependencies": {
