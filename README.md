@@ -3,9 +3,9 @@ Serve Swagger Editor
 
 ## Installing
 
-`javascript
+```javascript
 $ npm i swagger-editor-serve -S
-`
+```
 
 ## Using
 
