@@ -1,6 +1,6 @@
 {
   "name": "swagger-editor-serve",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Serve Swagger Editor",
   "main": "lib/index.js",
   "license": "MIT",
