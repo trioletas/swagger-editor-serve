@@ -15,22 +15,22 @@
     "url": "https://github.com/trioletas/swagger-editor-serve.git"
   },
   "scripts": {
-    "start": "node lib/index.js",
     "lint": "node node_modules/eslint/bin/eslint.js lib/**",
-    "prepublish": "npm run lint",
-    "preversion": "npm run lint"
+    "prepublish": "yarn lint",
+    "preversion": "yarn lint"
   },
   "dependencies": {
-    "bluebird": "3.3.4",
-    "connect": "3.4.1",
-    "portfinder": "1.0.2",
-    "serve-static": "1.10.2"
+    "connect": "3.6.6",
+    "portfinder": "1.0.13",
+    "serve-static": "1.13.2"
   },
   "peerDependencies": {
-    "swagger-editor": "2.9.8"
+    "swagger-editor-dist": "*"
   },
   "devDependencies": {
-    "eslint": "2.3.0",
-    "eslint-config-airbnb": "6.1.0"
+    "eslint": "4.19.1",
+    "eslint-config-airbnb": "16.1.0",
+    "eslint-plugin-import": "2.12.0",
+    "swagger-editor-dist": "3.5.5"
   }
 }

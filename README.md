@@ -10,27 +10,29 @@ $ npm i swagger-editor-serve -S
 ## Using
 
 ### Default Configuration
+
 ```javascript
 // starts the server and returns a promise that yields editor url object
-const serve = require('swagger-editor-serve');
-serve().then(editorUrl => console.log(editorUrl));
+const serve = require('./index');
+serve()
+  .then(c => console.log(c));
 ```
 
 ### Configuration Override
-```javascript
-const serve = require('swagger-editor-serve');
-serve({
-  editorPath: '../node_modules/swagger-editor', // path to source the editor distribution from
-  serverUrl: {                                  // Node.js url object
-    port: 9000                                  // if omitted, an arbirtrary available port will be picked up
-  }
-}).then((url) => console.log(url));
-```
 
+```javascript
+const serve = require('./index');
+serve({
+  editorPath: '../node_modules/swagger-editor-dist',
+  serverUrl: {
+    port: 9000
+  }
+}).then(c => console.log(c));
+```
 
 ## Node Compatibility
 
-Requires Node >= 4
+Requires Node >= 8
 
 ## License
 
